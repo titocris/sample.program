@@ -1,0 +1,43 @@
+namespace HOLA_ETS 
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int edad;
+            int num1;
+            int num2;
+            int cubo;
+            int mult5;
+
+            Console.WriteLine("¡BIENVENIDO AL CLUB LOS PANAS!");
+            Console.WriteLine("Introduzca su edad:");
+            edad = Convert.ToInt32(Console.ReadLine());
+
+            if (edad < 18) 
+            {
+                Console.WriteLine("Lo siento chaval.");
+            }
+            else
+            {
+                Console.WriteLine("Bienvenido al club, amigo.");
+                Console.WriteLine();
+                Console.WriteLine("Introduce un número entero:");
+                num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Introduce otro número entero:");
+                num2 = Convert.ToInt32(Console.ReadLine());
+                mult5 = (num1 % 5);
+                if (mult5 == 0)
+                {
+                    Console.WriteLine("Tu número es multiplo de 5.");
+                }
+                else
+                {
+                    Console.WriteLine("Tu número no es multiplo de 5.");
+                }
+                cubo = num2 * num2 * num2;
+                Console.WriteLine("El cubo del segundo número entero es {0}.", cubo);
+            }
+        }
+    }
+}
